@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ${spring_application_name:edge-node-1}
+    privateKey: ${spring_application_privateKey:72a2a765d7ea45eeed8b8cfd49cfec5600cecdecfa5786fe67ad8a5a635e0090}
+    contractAddress: ${spring_application_contractAddress:0x7a4fb2a11BdC6F0a76Fc85397d797e9580c9BE5D}
+  profiles:
+    active: edge-computing,dtto
+    #    active: edge-computing,ddqn
+    #    active: edge-computing,brmto
+    #    active: edge-computing,local
+  #    active: edge-computing,sac
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.235.1:8848
+        username: nacos
+        password: nacos
+        watch-delay: 3000
+      config:
+        server-addr: 192.168.235.1:8848
+        username: nacos
+        password: nacos
+        prefix: application
+        file-extension: yaml

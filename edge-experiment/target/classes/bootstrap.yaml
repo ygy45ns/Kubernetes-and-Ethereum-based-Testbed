@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: edge-experiment
+  profiles:
+    active: edge-computing,dtto
+    #    active: edge-computing,ddqn
+    #        active: edge-computing,brmto
+    #    active: edge-computing,local
+  #    active: edge-computing,sac
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.235.1:8848
+        username: nacos
+        password: nacos
+        watch-delay: 3000
+      config:
+        server-addr: 192.168.235.1:8848
+        username: nacos
+        password: nacos
+        prefix: application
+        file-extension: yaml
+server:
+  port: 9001
