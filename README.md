@@ -38,12 +38,4 @@ The system requires the following runtime environments. Detailed setup instructi
         </dependency>
 ```
 4. Use Web3j can generate Java contract classes based on smart contracts.
-
-## 📦 Code Status
-
-> The codebase is currently under **refactoring and restructuring**.  
-> More documentation and integration guides will be gradually updated in future releases.
-
-Stay tuned for updates!
-
 ---
